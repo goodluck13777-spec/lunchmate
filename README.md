@@ -29,4 +29,10 @@ npm run preview  # 빌드 미리보기
 
 ## 📦 배포
 
-`main` 브랜치에 푸시하면 GitHub Actions가 자동으로 GitHub Pages에 배포합니다.
+GitHub Pages (`gh-pages` 브랜치)로 배포합니다.
+
+```bash
+npm run build
+cp dist/index.html dist/404.html   # SPA 새로고침 fallback
+# dist 내용을 gh-pages 브랜치로 푸시
+```
